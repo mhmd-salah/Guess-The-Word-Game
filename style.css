@@ -26,6 +26,33 @@ h1{
   align-items: flex-start;
   justify-content: space-between;
   .game-area{
+    button:first-child{
+        padding: 20px;
+        background: var(--primary-color);
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        width: 80%;
+        border-radius: 5px;
+        margin-right: 14px;
+        cursor: pointer;
+        opacity: .9;
+      }
+      button:last-child{
+      cursor: pointer;
+        font-size: 20px;
+        font-weight: bold;
+        color: white;
+        border: none;
+        background: #18ba89;
+        padding: 19px;
+        border-radius: 5px;
+        opacity: .9;
+    }
+    button:hover{
+      opacity: 1;
+    }
     .inputs{
       > div{
         margin-bottom: 20px;
@@ -48,12 +75,14 @@ h1{
         height: 60px;
         text-align: center;
         font-size: 50px;
-        caret-color: var(--primary-color);
+        caret-color: transparent  ;
         background-color: white;
         border: none;
         border-bottom: 3px solid #555;
         &:focus{
-          outline-color: aliceblue;
+          outline-color: none;
+          border: 3px solid #555;
+          
         }
         &.yes-in-place{
           background: #f89e13;
@@ -104,6 +133,23 @@ h1{
         font-weight: bold;
       }
     }
+  }
+}
+.message{
+  text-align: center;
+  font-weight: bold;
+  font-size: 26px;
+  margin-top: 15px;
+  span{
+    font-weight: bold;
+    display: block;
+    font-size: 33px;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-top: 10px;
+  }
+  p{
+    margin-top: 15px;
   }
 }
 footer{
